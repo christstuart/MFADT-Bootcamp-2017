@@ -2,6 +2,7 @@
   First homework assignment for CODE
 */
 
+float inititalPosition;
 
 
 void setup() {
@@ -13,9 +14,27 @@ void setup() {
   createMarioHat();
   // Calling the function createFaceAnHair
   createFaceAndHair();
+  
+  fill(255, 0, 0, 0);
+  stroke(0,0,0,0);
+  rect(90, 20, 240, 140);
+  
 }
 
 void draw() {
+  
+  if (overRect(90,20,240,140)) {
+    print("workes");
+    textSize(32);
+    fill(255, 0, 0);
+    text("Mario", width / 2 + 100, height / 2 + 80);
+    background(255);
+  } else {
+     createMarioHat();
+  // Calling the function createFaceAnHair
+  createFaceAndHair();
+  }
+  
   
 }
 
@@ -26,6 +45,7 @@ void createFaceAndHair() {
   */
   
   // Lets start by creating the hat
+  
   
   fill(139, 69, 32);
   rect(110, 60, 20, 20);
@@ -40,6 +60,7 @@ void createFaceAndHair() {
   fill(255, 228, 196);
   rect(250, 60, 20, 20);
   fill(139, 69, 32);
+  
   rect(90, 80, 20, 20);
   fill(255, 228, 196);
   rect(110, 80, 20, 20);
@@ -132,4 +153,13 @@ void createMarioHat() {
   rect(270, 40, 20, 20);
   rect(290, 40, 20, 20);
   
+}
+
+boolean overRect(int x, int y, int width, int height) {
+  if (mouseX >= x && mouseX <= x + width && 
+      mouseY >= y && mouseY <= y + height) {
+    return true;
+  } else {
+    return false;
+  }
 }
