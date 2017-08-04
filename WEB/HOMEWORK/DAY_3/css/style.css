@@ -1,0 +1,75 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /*background-image: url(../images/background.jpg);*/
+  /*background-position: center;
+  background-size: cover;*/
+}
+
+.me {
+  color: #FFF;
+  background: blue;
+  z-index: 1;
+}
+
+.img {
+  height: 40vh;
+  width: auto;
+  top: 1px;
+  text-align: center;
+}
+
+
+#hi {
+  font-size: 1.5em;
+  color: red;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+#name {
+  color: #000;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.5em;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  top: 50px;
+}
+
+#root-content-card {
+  width: 100vw;
+  height: 15vh;
+  top: 17vh;
+  z-index: 0;
+  background: lightBlue;
+  position: relative;
+}
+
+#root-content-card-projects {
+  top: 40px;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+#root-content-card-skills {
+  width: 100vw;
+  height: 15vh;
+  z-index: 0;
+  background: lightGrey;
+}
+
+#project-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.5em;
+  color: #FFF;
+}
