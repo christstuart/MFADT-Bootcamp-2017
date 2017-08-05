@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  height: 100%;
+  width: 100%
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  padding-right: 25px;
+  padding-bottom: 0px;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+.image-menu {
+  width: 60%;
+  height: 60%;
+  top: -200px;
+  position: relative;
+  z-index: -1;
+}
+
+.verticalLine {
+  text-align: center;
+}
+
+.title {
+  font-size: 3.3em;
+  text-align: center;
+}
+
+.project-image {
+  width: 60%;
+}
+
+
+#top-bar {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#header-project-title {
+  position: relative;
+  left: 20px;
+}
+
+#home {
+  position: relative;
+  top: 20px;
+}
+
+#image-container {
+  text-align: center;
+}
+
+#menu-title-projects {
+  position: relative;
+  float: right;
+  right: 40px;
+}
+
+#menu-title-skills {
+  position: relative;
+  left: 70px;
+  top: 0px;
+  border: 2px  #000;
+}
+
+#name {
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.5em;
+  position: relative;
+  top: -80px;
+  /*left: 20px;*/
+}
+
+#job {
+  color: green;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  font-size: 6.5em;
+  bottom: 350px;
+  text-align: right;
+}
+
+#first-project {
+  position: relative;
+  text-align: center;
+
+}
